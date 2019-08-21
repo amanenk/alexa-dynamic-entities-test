@@ -49,15 +49,15 @@ const ChooseGenreIntentHandler = {
                             {
                                 id: '123',
                                 name: {
-                                    value: 'option one',
-                                    synonyms: ['first one']
+                                    value: 'option a',
+                                    synonyms: ['first one','option one' ]
                                 }
                             },
                             {
                                 id: '124',
                                 name: {
-                                    value: 'option two',
-                                    synonyms: ['socond one']
+                                    value: 'option b',
+                                    synonyms: ['socond one','option two']
                                 }
                             }
                         ]
