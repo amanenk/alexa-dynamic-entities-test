@@ -1,0 +1,50 @@
+{
+    "manifest": {
+        "apis": {
+            "custom": {
+                "endpoint": {
+                    "sourceDir": "lambda/custom",
+                    "uri": "music_game_skill_handler"
+                },
+                "interfaces": []
+            }
+        },
+        "privacyAndCompliance": {
+            "locales": {
+                "en-US": {
+                    "privacyPolicyUrl": "https://google.com",
+                    "termsOfUseUrl": "https://google.com"
+                }
+            },
+            "allowsPurchases": false,
+            "usesPersonalInfo": false,
+            "isChildDirected": false,
+            "isExportCompliant": true,
+            "containsAds": false
+        },
+        "publishingInformation": {
+            "locales": {
+                "en-US": {
+                    "name": "music game",
+                    "smallIconUri": "",
+                    "largeIconUri": "",
+                    "summary": "summary",
+                    "description": "description",
+                    "examplePhrases": [
+                        "Alexa, open music game",
+                        "Alexa, ask music game to choose rock",
+                        "Alexa, ask music game to choose pop"
+                    ],
+                    "keywords": [
+                        "music",
+                        "game"
+                    ]
+                }
+            },
+            "isAvailableWorldwide": true,
+            "testingInstructions": "",
+            "category": "GAME_INFO_AND_ACCESSORY",
+            "distributionCountries": []
+        }
+    }
+}

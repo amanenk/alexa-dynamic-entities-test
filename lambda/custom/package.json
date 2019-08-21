@@ -1,0 +1,11 @@
+{
+  "name": "custom",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "fdistorted",
+  "license": "MIT",
+  "dependencies": {
+    "ask-sdk-core": "^2.7.0",
+    "ask-sdk-model": "^1.19.0"
+  }
+}

@@ -1,0 +1,168 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "music game",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ChooseGenre",
+                    "slots": [
+                        {
+                            "name": "genre",
+                            "type": "GenreSlot"
+                        }
+                    ],
+                    "samples": [
+                        "{genre}",
+                        "lets start with {genre}",
+                        "lets go with {genre}",
+                        "i choose {genre}"
+                    ]
+                },
+                {
+                    "name": "ChooseOption",
+                    "slots": [
+                        {
+                            "name": "singerOption",
+                            "type": "SingerOption",
+                            "samples": [
+                                "{singerOption}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "answer",
+                        "the answer is {singerOption}",
+                        "{singerOption}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "GenreSlot",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Classic Rock",
+                                "synonyms": [
+                                    "rock"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eighties nineties",
+                                "synonyms": [
+                                    "eighties and nineties"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "country",
+                                "synonyms": [
+                                    "country music"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pop",
+                                "synonyms": [
+                                    "pop music"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "SingerOption",
+                    "values": [
+                        {
+                            "id": "0",
+                            "name": {
+                                "value": "zero"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "ChooseGenre",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "genre",
+                            "type": "GenreSlot",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.637444404538.1545056075131"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ChooseOption",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "singerOption",
+                            "type": "SingerOption",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1338981609580.320703737852"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "SKILL_RESPONSE"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.637444404538.1545056075131",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what genre"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "please tell me the genre"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1338981609580.320703737852",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please tell me the singer name"
+                    }
+                ]
+            }
+        ]
+    }
+}
